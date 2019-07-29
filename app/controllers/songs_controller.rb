@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.all
-  end
+  if Song.find_b
+ y end
 
   def show
     @song = Song.find(params[:id])
