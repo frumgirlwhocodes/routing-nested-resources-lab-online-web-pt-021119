@@ -13,7 +13,13 @@ else
  end 
 
   def show
-    if 
+    if Song.find_by(id: params[:id])
+      @song = Song.find(params[:id])
+    else
+      flash[:alert] = "Song not found"
+      redirect_to artist_songs_path(params[:artist_id])
+    end
+  end
   end
 
   def new
