@@ -13,7 +13,7 @@ else
  end 
 
   def show
-    @song = Song.find(params[:id])
+    if 
   end
 
   def new
