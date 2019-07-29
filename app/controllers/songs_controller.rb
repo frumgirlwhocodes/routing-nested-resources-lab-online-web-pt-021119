@@ -20,7 +20,6 @@ else
       redirect_to artist_songs_path(params[:artist_id])
     end
   end
-  end
 
   def new
     @song = Song.new
